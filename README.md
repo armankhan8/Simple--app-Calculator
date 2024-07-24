@@ -14,9 +14,8 @@ HTML/CSS: Used to create the frontend interface for user interactions.
 **Getting Started**
 1. Clone the Repository: git clone https://github.com/yourusername/your-repository.git
 2. Navigate to the Project Directory: cd your-repository
-3. Install the Required Packages: pip install -r requirements.txt
-4. Run the Application: python app.py
-5. Open your Browser and go to http://127.0.0.1:5003/ to see the application in action.
+3. Run the Application: python app.py
+4. Open your Browser and go to http://127.0.0.1:5003/ to see the application in action.
 
 **Usage**
 Enter two numbers into the input fields.

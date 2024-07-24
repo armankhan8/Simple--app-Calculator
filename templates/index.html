@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    {% endblock %}
+</head>
+<body>
+    {% block body %}
+    <div class="container">
+        <header class="header">
+            <h1>Calculator</h1>
+        </header>
+        <div class="content">
+            <div class="form">
+                <form action="/math" method="POST">
+                    <label for="operation">Choose a Mathematical Operation</label>
+                    <select id="operation" name="operation">
+                        <option value="add">Add</option>
+                        <option value="subtract">Subtract</option>
+                        <option value="multiply">Multiply</option>
+                        <option value="divide">Divide</option>
+                    </select>
+                    <input type="text" name="num1" id="num1" placeholder="Enter first number">
+                    <input type="text" name="num2" id="num2" placeholder="Enter second number">
+                    <input type="submit" value="Calculate">
+                </form>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
